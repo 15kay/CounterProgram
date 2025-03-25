@@ -1,7 +1,21 @@
-const diceLabel = document.getElementById("diceLabel");
-const roll = document.getElementById("roll");
+// Counter Program
+const decreaseBtn = document.getElementById("decreaseBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const resetBtn = document.getElementById("resetBtn");
+const counterLabel = document.getElementById("counterLabel");
+let count = 0;
 
-roll.onclick =  function() {
-    let number = Math.floor(Math.random() * 6);
-    diceLabel.textContent = number;
+increaseBtn.onclick = function() {
+    count++;
+    counterLabel.textContent = count;
+}
+
+decreaseBtn.onclick = function() {
+    count--;
+    counterLabel.textContent = count;
+}
+
+resetBtn.onclick = function() {
+    count= 0;
+    counterLabel.textContent = count;
 }
