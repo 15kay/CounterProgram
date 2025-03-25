@@ -1,4 +1,4 @@
-# Counter Website
+# Counter Program
 
 ## Overview
 This is a simple counter website that allows users to increase, decrease, and reset a counter value using three buttons.
